@@ -19,6 +19,7 @@ public class ProviderServiceImpl implements IProviderService {
 
   @Override
   public ProviderDto add(ProviderDto provider) {
+    provider.setCreationTime(System.currentTimeMillis());
     return mapper.entityToModel(repository.save(mapper.modelToEntity(provider)));
   }
 

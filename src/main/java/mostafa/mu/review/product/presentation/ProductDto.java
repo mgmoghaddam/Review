@@ -3,13 +3,16 @@ package mostafa.mu.review.product.presentation;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import mostafa.mu.review.comment.presentation.CommentDto;
+import mostafa.mu.review.commons.CreatableModel;
 import mostafa.mu.review.commons.IModel;
 import mostafa.mu.review.provider.presentation.ProviderDto;
 import mostafa.mu.review.user.presentation.UserDto;
 
 @Data
-public class ProductDto implements IModel {
+@EqualsAndHashCode(callSuper = true)
+public class ProductDto extends CreatableModel {
 
   private Long id;
   private String title;

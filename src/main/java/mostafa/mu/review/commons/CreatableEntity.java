@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @MappedSuperclass
-public class CreatableEntity implements IEntity{
+public class CreatableEntity implements IEntity {
 
   @Column(name = "creation_time")
   protected LocalDateTime creationTime;

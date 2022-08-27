@@ -12,18 +12,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@MappedSuperclass
 public class CreatableModel implements IModel {
 
   protected Long creationTime;
   protected Long validTo;
   protected Long updateAt;
-
-  public void setTimestamp(Object id) {
-    if (id == null) {
-      this.setCreationTime(System.currentTimeMillis());
-    } else {
-      this.setUpdateAt(System.currentTimeMillis());
-    }
-  }
 }

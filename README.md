@@ -140,7 +140,8 @@ Create databse
 ```bash
   CREATE DATABASE review;
 ```
-
+**Then you can run application and see the tables and relations.**
+**even can use Postman collection to call webservices.**
 
 ## Running Tests
 
@@ -151,10 +152,6 @@ Create databse
 
 **You can test user logic and comment logic working with above classes**
 
-
-**Then you can run application and see the tables and relations.**
-
-**even can use Postman collection to call webservices.**
 # Hey, I'm Mosatafa! 👋
 
 

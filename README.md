@@ -133,11 +133,7 @@ Clone the project
   git clone https://github.com/mgmoghaddam/review.git
 ```
 
-Go to the project directory
-
-```bash
-  cd review
-```
+Open it with IntellijIdea
 
 Create databse
 

@@ -142,6 +142,15 @@ Create databse
 ```
 
 
+## Running Tests
+
+**To run tests, we have two classes**
+
+- **UserControllerIntegrationTest**
+- **CommentControllerIntegrationTest**
+
+**You can test user logic and comment logic working with above classes**
+
 
 **Then you can run application and see the tables and relations.**
 

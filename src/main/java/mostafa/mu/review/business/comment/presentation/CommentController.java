@@ -27,11 +27,11 @@ public class CommentController {
   private final ICommentService service;
 
 
-  // I have to mention that id we have security and authentication process we can get username from that
+  // I have to mention that if we have security and authentication process we can get username from that
   @PostMapping("/")
   public ResponseEntity<CommentDto> addComment(@RequestBody CommentDto comment,
       @RequestParam Long username, @RequestParam Long productId) throws IOException {
-    return ResponseEntity.ok(service.addComment(comment,username,productId));
+    return ResponseEntity.ok(service.addComment(comment, username, productId));
   }
 
   @GetMapping("/{commentId}")

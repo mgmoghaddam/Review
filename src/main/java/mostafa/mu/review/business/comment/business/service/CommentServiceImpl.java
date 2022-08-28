@@ -58,7 +58,7 @@ public class CommentServiceImpl implements ICommentService {
     CommentEntity commentEntity = commentRepository.findById(commentDto.getId())
         .orElseThrow(() -> new RuntimeException(COMMENT_NOT_EXIST));
     commentEntity.setComment(commentDto.getComment());
-    commentEntity.setVote(commentDto.getVote());
+    commentEntity.setScore(commentDto.getScore());
     commentEntity.setPresentable(commentDto.getPresentable());
     commentEntity.setUpdateAt(
         LocalDateTime.ofInstant(Instant.ofEpochMilli(System.currentTimeMillis()),

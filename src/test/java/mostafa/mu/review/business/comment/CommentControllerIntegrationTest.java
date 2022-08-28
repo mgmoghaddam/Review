@@ -93,7 +93,7 @@ public class CommentControllerIntegrationTest {
         CommentDto comment = CommentDto.builder()
                 .presentable(true)
                 .comment("it's an awesome test")
-                .vote(10L)
+                .score(10L)
                 .product(ProductDto.builder().id(provider.getProducts().get(0).getId()).build())
                 .user(UserDto.builder().id(user.getId()).build())
                 .build();
@@ -108,7 +108,7 @@ public class CommentControllerIntegrationTest {
         assertEquals(HttpStatus.OK, responseComment.getStatusCode());
         assertThat(responseComment.getBody()).isNotNull();
         assertEquals(comment.getComment(), responseComment.getBody().getComment());
-        assertEquals(comment.getVote(), responseComment.getBody().getVote());
+        assertEquals(comment.getScore(), responseComment.getBody().getScore());
         assertEquals(comment.getPresentable(), responseComment.getBody().getPresentable());
     }
 }

@@ -24,7 +24,7 @@ public class CommentDto extends CreatableModel {
   private String comment;
   @Min(value = 0)
   @Max(value = 10)
-  private Long vote;
+  private Long score;
   private ProductDto product;
   private UserDto user;
 }

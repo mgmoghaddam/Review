@@ -31,7 +31,7 @@ public class CommentEntity extends CreatableEntity {
   private Long id;
   private Boolean presentable;
   private String comment;
-  private Long vote;
+  private Long score;
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "product_id")
   private ProductEntity product;

@@ -1,7 +1,7 @@
 
 # Review Test Application
 
-An example Application to show the relations between Providers, Products, Users and reviews.
+An example Application to show the relations between Providers, Products, Users and Reviews.
 
 ## API Reference for User
 
